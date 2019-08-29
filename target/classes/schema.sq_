@@ -1,0 +1,21 @@
+DROP TABLE IF EXISTS ACCOUNT;
+   
+CREATE TABLE ACCOUNT (
+	accountId VARCHAR(16) PRIMARY KEY,
+	accountNumber VARCHAR(16),
+	ownerCustomerId VARCHAR(16),
+	name VARCHAR(16),
+	accountType VARCHAR(16),
+	available DECIMAL(20,2),
+	balance DECIMAL(20,2),
+	creditLimit DECIMAL(20,2)
+);
+
+DROP TABLE IF EXISTS TRANSFER;
+
+CREATE TABLE TRANSFER (
+	fromAccountId VARCHAR(16) PRIMARY KEY,
+	toAccountId VARCHAR(16),
+	message VARCHAR(16),
+	amount DECIMAL(20,2)
+);
