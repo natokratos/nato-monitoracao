@@ -56,7 +56,8 @@ public class MetricsController {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		return doMetrics().toString();
+		
+		return metricsService.listMetrics().toString();
 	}
 	
 	@GetMapping("metrics")

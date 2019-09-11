@@ -58,6 +58,10 @@ public class MetricsService {
 	private String vmName = "";
 	private MBeanServerConnection mbeanConn = null;
 	
+	public List<Metrics> listMetrics() {
+		return metricsRepository.findAll();
+	}
+	
 	public List<VirtualMachineDescriptor> getVmList() {
 		return VirtualMachine.list();
 	}

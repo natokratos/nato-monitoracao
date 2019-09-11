@@ -22,7 +22,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 import com.sun.xml.ws.transport.http.servlet.WSSpringServlet;
 import com.tivit.api.mbean.TivitMon;
 
-@SpringBootApplication(scanBasePackages = {"com.tivit.api.service, com.tivit.api.controller, com.tivit.api.main"})
+@SpringBootApplication(scanBasePackages = {"com.tivit.api.service, com.tivit.api.controller, com.tivit.api.mbean, com.tivit.api.main"})
 @EntityScan(basePackages={"com.tivit.api.entity"})
 @EnableJpaRepositories(basePackages = {"com.tivit.api.repository"})
 public class TivitMonMain {
